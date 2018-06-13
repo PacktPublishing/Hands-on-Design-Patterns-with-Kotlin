@@ -1,0 +1,43 @@
+group 'me.soshin'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.2.10'
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    def $vertx_version = '3.5.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22"
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.1.10'
+    compile "org.jetbrains.kotlinx:kotlinx.dom:0.0.10"
+    compile "org.jetbrains.kotlin:kotlin-reflect:1.2.20-release-81 (1.2.20)"
+    compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: '1.2.31'
+    compile group: 'io.vertx', name: 'vertx-core', version: $vertx_version
+    compile group: 'io.vertx', name: 'vertx-web', version: $vertx_version
+    compile group: 'io.vertx', name: 'vertx-lang-kotlin', version: $vertx_version
+    compile group: 'io.vertx', name: 'vertx-lang-kotlin-coroutines', version: $vertx_version
+    testCompile group: 'org.testng', name: 'testng', version: '6.11'
+    compile group: 'io.vertx', name: 'vertx-web-client', version: $vertx_version
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.2'
+    compile group: 'io.vertx', name: 'vertx-jdbc-client', version: $vertx_version
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
