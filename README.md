@@ -52,7 +52,7 @@ With the following software and hardware list you can run all code files present
 
 ## Get to Know the Author
 **Alexey Soshin**
-Alexey Soshin is a software architect with 13 years of experience in making software, mostly for JVM. He started exploring Kotlin even before Kotlin 1.0 was released, and since then, has been a big enthusiast of the language. He speaks about Kotlin and reactive frameworks at various conferences and meetups, and maintains a technical blog. He's also contributor to Vert.x, toolkit for building reactive applications on the JVM
+is a software architect with 13 years of experience in making software, mostly for JVM. He started exploring Kotlin even before Kotlin 1.0 was released, and since then, has been a big enthusiast of the language. He speaks about Kotlin and reactive frameworks at various conferences and meetups, and maintains a technical blog. He's also contributor to Vert.x, toolkit for building reactive applications on the JVM
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
